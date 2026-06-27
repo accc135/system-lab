@@ -1,0 +1,23 @@
+confidence	kind	pattern	note
+H	native_api	Sensor.TYPE_HEART_RATE	Heart-rate sensor
+H	native_api	Sensor.TYPE_STEP_COUNTER	Step counter
+H	native_api	Sensor.TYPE_STEP_DETECTOR	Step detector
+H	native_api	SensorManager.registerListener	Sensor data listener
+M	permission	BODY_SENSORS	Body sensors permission
+M	sdk_api	HealthConnectClient	Android Health Connect
+M	sdk_api	com.google.android.gms.fitness	Google Fit SDK
+M	business_keyword	health	Health field
+M	business_keyword	medical	Medical field
+M	business_keyword	diagnosis	Diagnosis field
+M	business_keyword	disease	Disease history field
+M	business_keyword	allergy	Allergy field
+M	business_keyword	heartRate	Heart rate field
+M	business_keyword	bloodPressure	Blood pressure field
+M	business_keyword	bloodSugar	Blood sugar field
+M	business_keyword	sleep	Sleep data field
+M	business_keyword	menstrual	Menstrual cycle field
+M	business_keyword	vaccine	Vaccine record field
+L	chinese_keyword	病历	Medical record keyword
+L	chinese_keyword	体检报告	Medical examination report keyword
+L	chinese_keyword	心率	Heart rate keyword
+L	chinese_keyword	血压	Blood pressure keyword

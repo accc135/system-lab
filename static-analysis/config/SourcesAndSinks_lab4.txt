@@ -1,0 +1,22 @@
+<android.telephony.TelephonyManager: java.lang.String getDeviceId()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getImei()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSubscriberId()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getLine1Number()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()> -> _SOURCE_
+
+<android.location.Location: double getLatitude()> -> _SOURCE_
+<android.location.Location: double getLongitude()> -> _SOURCE_
+
+<android.net.wifi.WifiInfo: java.lang.String getMacAddress()> -> _SOURCE_
+<android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)> -> _SOURCE_
+
+<android.util.Log: int i(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int d(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int e(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int v(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int w(java.lang.String,java.lang.String)> -> _SINK_
+
+<java.io.OutputStream: void write(byte[])> -> _SINK_
+<java.io.Writer: void write(java.lang.String)> -> _SINK_
+<java.net.URLConnection: java.io.OutputStream getOutputStream()> -> _SINK_
+<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()> -> _SINK_

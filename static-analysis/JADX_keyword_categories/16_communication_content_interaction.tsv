@@ -1,0 +1,30 @@
+confidence	kind	pattern	note
+H	native_api	Telephony.Sms	SMS provider
+H	native_api	Telephony.Sms.CONTENT_URI	SMS content URI
+H	native_api	Telephony.Mms	MMS provider
+H	native_api	SmsMessage.createFromPdu	SMS content parse
+H	native_api	CallLog.Calls	Call log provider
+H	native_api	CallLog.Calls.CONTENT_URI	Call log content URI
+H	native_api	ContentResolver.query	Provider query for SMS/call/chat-like data
+H	native_api	Cursor.getString	Provider string value
+H	native_api	Intent.ACTION_SEND	Share/send content
+M	permission	READ_SMS	SMS read permission
+M	permission	READ_CALL_LOG	Call log permission
+M	permission	READ_PHONE_NUMBERS	Phone number permission
+M	business_keyword	chatMessage	Chat message
+M	business_keyword	messageContent	Message content
+M	business_keyword	smsContent	SMS content
+M	business_keyword	emailContent	Email content
+M	business_keyword	privateMessage	Private message
+M	business_keyword	voiceMessage	Voice message
+M	business_keyword	callRecord	Call record
+M	business_keyword	commentContent	Comment content
+M	business_keyword	postContent	Post content
+M	business_keyword	danmaku	Bullet comment/danmaku
+M	business_keyword	feedback	Feedback content
+M	business_keyword	complaint	Complaint content
+M	business_keyword	reportContent	Report content
+L	chinese_keyword	聊天记录	Chat history keyword
+L	chinese_keyword	短信内容	SMS content keyword
+L	chinese_keyword	通话记录	Call log keyword
+L	chinese_keyword	投诉反馈	Complaint/feedback keyword

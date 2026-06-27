@@ -1,0 +1,28 @@
+confidence	kind	pattern	note
+H	native_api	LocationManager.requestLocationUpdates	Repeated location updates
+H	native_api	LocationManager.requestSingleUpdate	Single location update used in track collection
+H	native_api	FusedLocationProviderClient.requestLocationUpdates	Repeated fused location updates
+H	native_api	LocationCallback.onLocationResult	Location callback stream
+H	native_api	Location.getLatitude	Track latitude
+H	native_api	Location.getLongitude	Track longitude
+H	native_api	Location.getSpeed	Track speed
+H	native_api	Location.getBearing	Track bearing
+H	native_api	Location.getTime	Track timestamp
+M	sdk_api	AMapLocationClient.startLocation	Amap tracking/location start
+M	sdk_api	TraceLocation	Amap trace correction data
+M	sdk_api	LBSTraceClient	Amap trajectory correction
+M	sdk_api	BDAbstractLocationListener	Baidu location stream
+M	business_keyword	trajectory	Trajectory field
+M	business_keyword	track	Track field
+M	business_keyword	route	Route field
+M	business_keyword	path	Path field
+M	business_keyword	gpsTrack	GPS track field
+M	business_keyword	navigation	Navigation record
+M	business_keyword	checkIn	Check-in record
+M	business_keyword	stayTime	Stay time
+M	business_keyword	frequentPlace	Frequent place
+L	business_keyword	taxiOrder	Taxi order
+L	chinese_keyword	行踪轨迹	Trajectory keyword
+L	chinese_keyword	出行路线	Travel route keyword
+L	chinese_keyword	常去地点	Frequent place keyword
+L	chinese_keyword	签到	Check-in keyword

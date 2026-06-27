@@ -1,0 +1,21 @@
+confidence	kind	pattern	note
+M	business_keyword	publicProfile	Public profile
+M	business_keyword	homepage	Homepage/profile page
+M	business_keyword	profilePage	Profile page
+M	business_keyword	publicPost	Public post
+M	business_keyword	publicComment	Public comment
+M	business_keyword	publicPhoto	Public photo
+M	business_keyword	publicContact	Public contact information
+M	business_keyword	publicResume	Public resume
+M	business_keyword	checkIn	Public check-in
+M	business_keyword	works	Public works
+M	business_keyword	portfolio	Portfolio/public works
+M	business_keyword	avatar	Public avatar
+M	business_keyword	nickname	Public nickname
+M	business_keyword	bio	Profile bio
+M	business_keyword	signature	Profile signature
+L	chinese_keyword	公开发布	Public publishing keyword
+L	chinese_keyword	主页信息	Homepage info keyword
+L	chinese_keyword	公开评论	Public comment keyword
+L	chinese_keyword	公开照片	Public photo keyword
+L	chinese_keyword	公开作品	Public works keyword

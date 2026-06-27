@@ -1,0 +1,31 @@
+confidence	kind	pattern	note
+H	native_api	ContactsContract	Contacts provider API
+H	native_api	ContactsContract.Contacts	Contacts table
+H	native_api	ContactsContract.RawContacts	Raw contacts table
+H	native_api	ContactsContract.Data	Contacts data table
+H	native_api	CommonDataKinds.Phone	Contact phone API
+H	native_api	CommonDataKinds.Email	Contact email API
+H	native_api	CommonDataKinds.StructuredPostal	Contact address API
+H	native_api	CommonDataKinds.StructuredName	Contact name API
+H	native_api	ContentResolver.query	Provider query, commonly used for contacts/address data
+H	native_api	Cursor.getString	Cursor string value from provider
+H	native_api	TelephonyManager.getLine1Number	Own phone number
+M	permission	READ_CONTACTS	Contacts permission
+M	permission	GET_ACCOUNTS	Accounts permission may expose contact identifiers
+M	business_keyword	mobile	Mobile phone field
+M	business_keyword	phone	Phone field
+M	business_keyword	email	Email field
+M	business_keyword	address	Address field
+M	business_keyword	receiverAddress	Shipping address
+M	business_keyword	shippingAddress	Shipping address
+M	business_keyword	postalCode	Postal code
+M	business_keyword	emergencyContact	Emergency contact
+M	business_keyword	contactName	Contact name
+M	business_keyword	contactPhone	Contact phone
+L	business_keyword	wechat	Instant messaging account
+L	business_keyword	qq	Instant messaging account
+L	business_keyword	socialAccount	Social media account
+L	chinese_keyword	手机号	Phone number keyword
+L	chinese_keyword	电子邮箱	Email keyword
+L	chinese_keyword	收货地址	Shipping address keyword
+L	chinese_keyword	紧急联系人	Emergency contact keyword

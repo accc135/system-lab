@@ -1,0 +1,21 @@
+confidence	kind	pattern	note
+M	business_keyword	religion	Religion field
+M	business_keyword	religious	Religious field
+M	business_keyword	military	Military identity
+M	business_keyword	soldier	Soldier identity
+M	business_keyword	police	Police identity
+M	business_keyword	judge	Judge identity
+M	business_keyword	prosecutor	Prosecutor identity
+M	business_keyword	disabled	Disability identity
+M	business_keyword	disability	Disability field
+M	business_keyword	lowIncome	Low-income identity
+M	business_keyword	specialIdentity	Special identity
+M	business_keyword	identityType	Identity type field
+L	chinese_keyword	宗教	Religion keyword
+L	chinese_keyword	军人	Military identity keyword
+L	chinese_keyword	警察	Police identity keyword
+L	chinese_keyword	法官	Judge identity keyword
+L	chinese_keyword	检察官	Prosecutor identity keyword
+L	chinese_keyword	残疾人	Disability identity keyword
+L	chinese_keyword	低保	Low-income support keyword
+L	chinese_keyword	特殊身份	Special identity keyword

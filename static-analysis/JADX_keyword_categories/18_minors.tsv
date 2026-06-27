@@ -1,0 +1,31 @@
+confidence	kind	pattern	note
+M	business_keyword	minor	Minor field
+M	business_keyword	child	Child field
+M	business_keyword	children	Children field
+M	business_keyword	underAge	Under-age field
+M	business_keyword	guardian	Guardian field
+M	business_keyword	parentName	Parent name
+M	business_keyword	parentPhone	Parent phone
+M	business_keyword	age	Age field
+M	business_keyword	birthday	Birthday field
+M	business_keyword	birthDate	Birth date field
+M	business_keyword	school	School field
+M	business_keyword	className	Class field
+M	business_keyword	studentId	Student ID
+M	business_keyword	gameRecord	Game record
+M	business_keyword	learningRecord	Learning record
+M	business_keyword	healthRecord	Health record
+M	business_keyword	minorInfo	Minor information
+M	business_keyword	minorName	Minor name
+M	business_keyword	minorAge	Minor age
+M	business_keyword	childAge	Child age
+M	business_keyword	childName	Child name
+M	business_keyword	childBirthday	Child birthday
+M	business_keyword	guardianName	Guardian name
+M	business_keyword	guardianPhone	Guardian phone
+M	business_keyword	parentInfo	Parent information
+M	business_keyword	studentInfo	Student information
+L	chinese_keyword	未成年人	Minor keyword
+L	chinese_keyword	儿童	Child keyword
+L	chinese_keyword	监护人	Guardian keyword
+L	chinese_keyword	不满十四周岁	Under 14 keyword

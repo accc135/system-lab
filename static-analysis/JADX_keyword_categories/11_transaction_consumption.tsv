@@ -1,0 +1,23 @@
+confidence	kind	pattern	note
+M	business_keyword	orderId	Order ID
+M	business_keyword	orderNo	Order number
+M	business_keyword	tradeNo	Trade number
+M	business_keyword	payment	Payment field
+M	business_keyword	payRecord	Payment record
+M	business_keyword	refund	Refund field
+M	business_keyword	recharge	Recharge field
+M	business_keyword	withdraw	Withdrawal field
+M	business_keyword	amount	Transaction amount
+M	business_keyword	consume	Consumption field
+M	business_keyword	goodsName	Purchased goods name
+M	business_keyword	invoice	Invoice field
+M	business_keyword	subscription	Subscription field
+M	business_keyword	ticket	Ticket order
+M	business_keyword	hotelOrder	Hotel order
+M	business_keyword	takeout	Takeout order
+M	business_keyword	shippingInfo	Shipping information
+L	chinese_keyword	订单	Order keyword
+L	chinese_keyword	支付记录	Payment record keyword
+L	chinese_keyword	退款	Refund keyword
+L	chinese_keyword	发票	Invoice keyword
+L	chinese_keyword	消费金额	Consumption amount keyword

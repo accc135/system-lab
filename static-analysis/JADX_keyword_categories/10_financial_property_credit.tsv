@@ -1,0 +1,26 @@
+confidence	kind	pattern	note
+M	business_keyword	bankCard	Bank card field
+M	business_keyword	cardNo	Card number field
+M	business_keyword	accountNo	Bank/account number
+M	business_keyword	payAccount	Payment account
+M	business_keyword	balance	Account balance
+M	business_keyword	asset	Assets field
+M	business_keyword	debt	Debt field
+M	business_keyword	income	Income field
+M	business_keyword	loan	Loan field
+M	business_keyword	creditScore	Credit score
+M	business_keyword	creditLimit	Credit limit
+M	business_keyword	overdue	Overdue record
+M	business_keyword	repayment	Repayment record
+M	business_keyword	riskLevel	Risk level
+M	business_keyword	fundAccount	Fund account
+M	business_keyword	securityAccount	Securities account
+M	business_keyword	insuranceAccount	Insurance account
+M	business_keyword	payPassword	Payment password
+M	business_keyword	tradePassword	Trading password
+L	sdk_api	alipay	Alipay account/payment clue
+L	sdk_api	wechatpay	WeChat Pay clue
+L	chinese_keyword	银行卡	Bank card keyword
+L	chinese_keyword	账户余额	Account balance keyword
+L	chinese_keyword	信用评分	Credit score keyword
+L	chinese_keyword	征信	Credit report keyword

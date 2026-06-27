@@ -1,0 +1,29 @@
+confidence	kind	pattern	note
+H	native_api	AccountManager.getAccounts	Android account list
+H	native_api	AccountManager.getAccountsByType	Android accounts by type
+H	native_api	AccountManager.getPassword	Account password/token-like data
+H	native_api	AccountManager.getUserData	Account user data
+H	native_api	BiometricPrompt	Biometric or real-name authentication clue
+H	native_api	FingerprintManager	Fingerprint authentication clue
+M	permission	USE_BIOMETRIC	Biometric permission
+M	permission	USE_FINGERPRINT	Legacy fingerprint permission
+M	business_keyword	realName	Real name field
+M	business_keyword	idCard	Chinese ID card field
+M	business_keyword	idNo	ID number field
+M	business_keyword	identity	Identity field
+M	business_keyword	certNo	Certificate number
+M	business_keyword	verifyCode	Verification code
+M	business_keyword	captcha	Captcha or verification code
+L	business_keyword	nickname	Nickname field
+L	business_keyword	userName	Username field
+L	business_keyword	loginName	Login name field
+L	business_keyword	memberId	Member ID
+L	business_keyword	accountId	Account ID
+L	business_keyword	avatar	Avatar field
+L	business_keyword	signature	Personal signature
+L	business_keyword	passport	Passport field
+L	business_keyword	driverLicense	Driver license field
+L	chinese_keyword	身份证	Chinese ID card keyword
+L	chinese_keyword	实名认证	Real-name verification keyword
+L	chinese_keyword	真实姓名	Real name keyword
+L	chinese_keyword	验证码	Verification code keyword

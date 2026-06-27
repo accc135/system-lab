@@ -1,0 +1,23 @@
+confidence	kind	pattern	note
+M	business_keyword	userProfile	User profile
+M	business_keyword	portrait	User portrait/profile
+M	business_keyword	profileTag	Profile tag
+M	business_keyword	algorithmTag	Algorithm tag
+M	business_keyword	recommendTag	Recommendation tag
+M	business_keyword	adTag	Advertising tag
+M	business_keyword	riskTag	Risk tag
+M	business_keyword	riskScore	Risk score
+M	business_keyword	creditScore	Credit score
+M	business_keyword	activeLevel	Activity level
+M	business_keyword	consumeAbility	Consumption ability
+M	business_keyword	priceSensitive	Price sensitivity
+M	business_keyword	personalized	Personalization field
+M	business_keyword	recommendResult	Recommendation result
+M	business_keyword	rankResult	Ranking result
+M	business_keyword	autoReview	Automated review
+M	business_keyword	autoRisk	Automated risk control
+M	business_keyword	abTest	A/B test or differentiated display
+L	chinese_keyword	用户画像	User profile keyword
+L	chinese_keyword	算法标签	Algorithm tag keyword
+L	chinese_keyword	个性化推荐	Personalized recommendation keyword
+L	chinese_keyword	风险评分	Risk score keyword

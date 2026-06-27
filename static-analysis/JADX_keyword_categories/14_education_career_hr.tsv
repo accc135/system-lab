@@ -1,0 +1,33 @@
+confidence	kind	pattern	note
+M	business_keyword	school	School field
+M	business_keyword	schoolName	School name
+M	business_keyword	college	College field
+M	business_keyword	collegeName	College name
+M	business_keyword	major	Major field
+M	business_keyword	majorName	Major name
+M	business_keyword	className	Class field
+M	business_keyword	studentId	Student ID
+M	business_keyword	education	Education background
+M	business_keyword	educationExperience	Education experience
+M	business_keyword	educationBackground	Education background
+M	business_keyword	degree	Degree field
+M	business_keyword	score	Score/grade field
+M	business_keyword	certificate	Certificate field
+M	business_keyword	certificateNo	Certificate number
+M	business_keyword	training	Training record
+M	business_keyword	trainingExperience	Training experience
+M	business_keyword	company	Company/employer
+M	business_keyword	companyName	Company name
+M	business_keyword	employer	Employer field
+M	business_keyword	position	Position/job title
+M	business_keyword	jobTitle	Job title
+M	business_keyword	employeeId	Employee ID
+M	business_keyword	resume	Resume field
+M	business_keyword	workExperience	Work experience
+M	business_keyword	salary	Salary field
+M	business_keyword	socialSecurity	Social security
+M	business_keyword	providentFund	Housing provident fund
+L	chinese_keyword	学校	School keyword
+L	chinese_keyword	学号	Student ID keyword
+L	chinese_keyword	简历	Resume keyword
+L	chinese_keyword	工作经历	Work experience keyword

@@ -1,0 +1,17 @@
+orderId
+orderNo
+tradeNo
+payRecord
+recharge
+withdraw
+goodsName
+invoice
+subscription
+hotelOrder
+takeout
+shippingInfo
+订单
+支付记录
+退款
+发票
+消费金额

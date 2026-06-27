@@ -1,0 +1,49 @@
+confidence	kind	pattern	note
+H	native_api	Camera.open	Legacy camera
+H	native_api	Camera.takePicture	Legacy camera photo capture
+H	native_api	Camera.setPreviewCallback	Legacy camera preview callback
+H	native_api	CameraManager.openCamera	Camera2 API
+H	native_api	CameraCaptureSession.capture	Camera2 capture
+H	native_api	CameraCaptureSession.setRepeatingRequest	Camera2 preview/video stream
+H	native_api	Camera.PictureCallback.onPictureTaken	Photo callback
+H	native_api	Camera.PreviewCallback.onPreviewFrame	Camera preview frames
+H	native_api	MediaRecorder.setAudioSource	Audio recording
+H	native_api	MediaRecorder.setVideoSource	Video recording
+H	native_api	MediaRecorder.setOutputFile	Recorded media output file
+H	native_api	MediaRecorder.start	Media recording start
+H	native_api	AudioRecord.read	Raw audio recording
+H	native_api	ImageReader.acquireLatestImage	Camera image frame
+H	native_api	ImageReader.acquireNextImage	Camera image frame
+H	native_api	MediaStore.Images	Image media provider
+H	native_api	MediaStore.Video	Video media provider
+H	native_api	MediaStore.Audio	Audio media provider
+H	native_api	MediaStore.ACTION_IMAGE_CAPTURE	Camera capture intent
+H	native_api	MediaStore.ACTION_VIDEO_CAPTURE	Video capture intent
+M	permission	CAMERA	Camera permission
+M	permission	RECORD_AUDIO	Audio recording permission
+M	permission	READ_MEDIA_IMAGES	Android 13 image permission
+M	permission	READ_MEDIA_VIDEO	Android 13 video permission
+M	permission	READ_EXTERNAL_STORAGE	External media read permission
+M	business_keyword	photo	Photo field
+M	business_keyword	photoPath	Photo path
+M	business_keyword	photoUrl	Photo URL
+M	business_keyword	photoUpload	Photo upload
+M	business_keyword	image	Image field
+M	business_keyword	imagePath	Image path
+M	business_keyword	imageUrl	Image URL
+M	business_keyword	imageUpload	Image upload
+M	business_keyword	video	Video field
+M	business_keyword	videoPath	Video path
+M	business_keyword	videoUrl	Video URL
+M	business_keyword	videoUpload	Video upload
+M	business_keyword	audio	Audio field
+M	business_keyword	audioPath	Audio path
+M	business_keyword	audioUrl	Audio URL
+M	business_keyword	audioRecord	Audio recording field
+M	business_keyword	voice	Voice field
+M	business_keyword	voiceMessage	Voice message
+M	business_keyword	voiceRecord	Voice recording
+M	business_keyword	record	Recording field
+L	chinese_keyword	照片	Photo keyword
+L	chinese_keyword	录音	Recording keyword
+L	chinese_keyword	语音消息	Voice message keyword

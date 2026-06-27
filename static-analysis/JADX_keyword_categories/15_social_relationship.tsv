@@ -1,0 +1,26 @@
+confidence	kind	pattern	note
+H	native_api	ContactsContract	Contacts provider
+H	native_api	ContactsContract.Contacts	Contacts table
+H	native_api	ContactsContract.RawContacts	Raw contacts table
+H	native_api	ContactsContract.Data	Contacts data table
+H	native_api	CommonDataKinds.Phone	Contact phone
+H	native_api	CommonDataKinds.Email	Contact email
+H	native_api	ContentResolver.query	Provider query for contacts/social graph
+H	native_api	Cursor.getString	Provider string value
+M	permission	READ_CONTACTS	Contacts permission
+M	native_api	AccountManager.getAccounts	Accounts/social identity clue
+M	business_keyword	contactList	Contact list
+M	business_keyword	friendList	Friend list
+M	business_keyword	follower	Follower field
+M	business_keyword	following	Following field
+M	business_keyword	fans	Fans/follower field
+M	business_keyword	groupInfo	Group info
+M	business_keyword	family	Family relationship
+M	business_keyword	relative	Relative relationship
+M	business_keyword	colleague	Colleague relationship
+M	business_keyword	relationship	Relationship field
+M	business_keyword	mutualContact	Mutual contact
+L	chinese_keyword	通讯录	Address book keyword
+L	chinese_keyword	好友列表	Friend list keyword
+L	chinese_keyword	粉丝	Follower keyword
+L	chinese_keyword	群组	Group keyword

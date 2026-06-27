@@ -1,0 +1,190 @@
+% SourcesAndSinks_fast.txt
+% Fast profile for Lab4 privacy-policy vs. behavior analysis.
+% Goal: first-pass Android APK analysis with fewer false positives and better speed.
+% Keep only core privacy sources and high-value exfiltration sinks.
+% Generated on 2026-05-21.
+
+% =====================================================================
+% Core Android privacy sources
+% =====================================================================
+
+% ---------------------------------------------------------------------
+% Device identifiers / phone / SIM
+% ---------------------------------------------------------------------
+<android.telephony.TelephonyManager: java.lang.String getDeviceId()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getDeviceId(int)> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getImei()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getImei(int)> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getMeid()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getMeid(int)> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSubscriberId()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSubscriberId(int)> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getLine1Number()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getLine1Number(int)> android.permission.READ_PHONE_NUMBERS -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber()> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSimSerialNumber(int)> android.permission.READ_PHONE_STATE -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getNetworkOperator()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getNetworkOperatorName()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSimOperator()> -> _SOURCE_
+<android.telephony.TelephonyManager: java.lang.String getSimOperatorName()> -> _SOURCE_
+<android.telephony.TelephonyManager: android.telephony.CellLocation getCellLocation()> android.permission.ACCESS_FINE_LOCATION -> _SOURCE_
+<android.telephony.TelephonyManager: java.util.List getAllCellInfo()> android.permission.ACCESS_FINE_LOCATION -> _SOURCE_
+<android.telephony.gsm.GsmCellLocation: int getCid()> -> _SOURCE_
+<android.telephony.gsm.GsmCellLocation: int getLac()> -> _SOURCE_
+<android.telephony.cdma.CdmaCellLocation: int getBaseStationId()> -> _SOURCE_
+<android.telephony.cdma.CdmaCellLocation: int getBaseStationLatitude()> -> _SOURCE_
+<android.telephony.cdma.CdmaCellLocation: int getBaseStationLongitude()> -> _SOURCE_
+
+% ---------------------------------------------------------------------
+% Android ID / advertising ID
+% ---------------------------------------------------------------------
+<android.provider.Settings$Secure: java.lang.String getString(android.content.ContentResolver,java.lang.String)> -> _SOURCE_
+<android.provider.Settings$System: java.lang.String getString(android.content.ContentResolver,java.lang.String)> -> _SOURCE_
+<android.provider.Settings$Global: java.lang.String getString(android.content.ContentResolver,java.lang.String)> -> _SOURCE_
+<com.google.android.gms.ads.identifier.AdvertisingIdClient$Info: java.lang.String getId()> -> _SOURCE_
+
+% ---------------------------------------------------------------------
+% Location
+% ---------------------------------------------------------------------
+<android.location.Location: double getLatitude()> -> _SOURCE_
+<android.location.Location: double getLongitude()> -> _SOURCE_
+<android.location.Location: double getAltitude()> -> _SOURCE_
+<android.location.Location: float getAccuracy()> -> _SOURCE_
+<android.location.Location: java.lang.String getProvider()> -> _SOURCE_
+<android.location.LocationManager: android.location.Location getLastKnownLocation(java.lang.String)> -> _SOURCE_
+
+% ---------------------------------------------------------------------
+% Wi-Fi / Bluetooth identifiers
+% ---------------------------------------------------------------------
+<android.net.wifi.WifiManager: android.net.wifi.WifiInfo getConnectionInfo()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_
+<android.net.wifi.WifiManager: java.util.List getScanResults()> android.permission.ACCESS_WIFI_STATE -> _SOURCE_
+<android.net.wifi.WifiInfo: java.lang.String getMacAddress()> -> _SOURCE_
+<android.net.wifi.WifiInfo: java.lang.String getSSID()> -> _SOURCE_
+<android.net.wifi.WifiInfo: java.lang.String getBSSID()> -> _SOURCE_
+<android.net.wifi.WifiInfo: int getIpAddress()> -> _SOURCE_
+<android.bluetooth.BluetoothAdapter: java.lang.String getAddress()> -> _SOURCE_
+<android.bluetooth.BluetoothAdapter: java.lang.String getName()> -> _SOURCE_
+<android.bluetooth.BluetoothDevice: java.lang.String getAddress()> -> _SOURCE_
+<android.bluetooth.BluetoothDevice: java.lang.String getName()> -> _SOURCE_
+
+% ---------------------------------------------------------------------
+% Accounts / contacts / content providers / cursor values
+% ContentResolver.query is broad, but useful for contacts, calendar, SMS,
+% media store, browser history, and app-defined providers in a first pass.
+% ---------------------------------------------------------------------
+<android.accounts.AccountManager: android.accounts.Account[] getAccounts()> android.permission.GET_ACCOUNTS -> _SOURCE_
+<android.accounts.AccountManager: android.accounts.Account[] getAccountsByType(java.lang.String)> android.permission.GET_ACCOUNTS -> _SOURCE_
+<android.accounts.AccountManager: java.lang.String getUserData(android.accounts.Account,java.lang.String)> -> _SOURCE_
+<android.accounts.AccountManager: java.lang.String getPassword(android.accounts.Account)> -> _SOURCE_
+<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String)> -> _SOURCE_
+<android.content.ContentResolver: android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String,android.os.CancellationSignal)> -> _SOURCE_
+<android.database.Cursor: java.lang.String getString(int)> -> _SOURCE_
+<android.database.Cursor: int getInt(int)> -> _SOURCE_
+<android.database.Cursor: long getLong(int)> -> _SOURCE_
+<android.database.Cursor: double getDouble(int)> -> _SOURCE_
+<android.database.Cursor: byte[] getBlob(int)> -> _SOURCE_
+
+% ---------------------------------------------------------------------
+% Installed apps / packages
+% ---------------------------------------------------------------------
+<android.content.pm.PackageManager: java.util.List getInstalledApplications(int)> -> _SOURCE_
+<android.content.pm.PackageManager: java.util.List getInstalledPackages(int)> -> _SOURCE_
+<android.content.pm.PackageManager: java.util.List queryIntentActivities(android.content.Intent,int)> -> _SOURCE_
+
+% ---------------------------------------------------------------------
+% Clipboard and user input
+% ---------------------------------------------------------------------
+<android.content.ClipboardManager: android.content.ClipData getPrimaryClip()> -> _SOURCE_
+<android.content.ClipboardManager: java.lang.CharSequence getText()> -> _SOURCE_
+<android.widget.TextView: java.lang.CharSequence getText()> -> _SOURCE_
+<android.widget.EditText: android.text.Editable getText()> -> _SOURCE_
+
+% ---------------------------------------------------------------------
+% Microphone / camera result data
+% ---------------------------------------------------------------------
+<android.media.AudioRecord: int read(short[],int,int)> android.permission.RECORD_AUDIO -> _SOURCE_
+<android.media.AudioRecord: int read(byte[],int,int)> android.permission.RECORD_AUDIO -> _SOURCE_
+<android.media.AudioRecord: int read(java.nio.ByteBuffer,int)> android.permission.RECORD_AUDIO -> _SOURCE_
+<android.hardware.Camera$PictureCallback: void onPictureTaken(byte[],android.hardware.Camera)> android.permission.CAMERA -> _SOURCE_
+<android.hardware.Camera$PreviewCallback: void onPreviewFrame(byte[],android.hardware.Camera)> android.permission.CAMERA -> _SOURCE_
+<android.media.ImageReader: android.media.Image acquireLatestImage()> android.permission.CAMERA -> _SOURCE_
+<android.media.ImageReader: android.media.Image acquireNextImage()> android.permission.CAMERA -> _SOURCE_
+
+% =====================================================================
+% High-value sinks
+% =====================================================================
+
+% ---------------------------------------------------------------------
+% Network / HTTP exfiltration
+% ---------------------------------------------------------------------
+<java.io.OutputStream: void write(byte[])> -> _SINK_
+<java.io.OutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.OutputStream: void write(int)> -> _SINK_
+<java.net.URLConnection: java.io.OutputStream getOutputStream()> -> _SINK_
+<java.net.HttpURLConnection: java.io.OutputStream getOutputStream()> -> _SINK_
+<javax.net.ssl.HttpsURLConnection: java.io.OutputStream getOutputStream()> -> _SINK_
+<java.net.Socket: java.io.OutputStream getOutputStream()> -> _SINK_
+<java.net.DatagramSocket: void send(java.net.DatagramPacket)> -> _SINK_
+<org.apache.http.impl.client.DefaultHttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)> -> _SINK_
+<org.apache.http.client.HttpClient: org.apache.http.HttpResponse execute(org.apache.http.client.methods.HttpUriRequest)> -> _SINK_
+<org.apache.http.client.methods.HttpPost: void setEntity(org.apache.http.HttpEntity)> -> _SINK_
+<org.apache.http.client.methods.HttpPut: void setEntity(org.apache.http.HttpEntity)> -> _SINK_
+<okhttp3.Request$Builder: okhttp3.Request$Builder url(java.lang.String)> -> _SINK_
+<okhttp3.Request$Builder: okhttp3.Request$Builder header(java.lang.String,java.lang.String)> -> _SINK_
+<okhttp3.Request$Builder: okhttp3.Request$Builder addHeader(java.lang.String,java.lang.String)> -> _SINK_
+<okhttp3.Request$Builder: okhttp3.Request$Builder post(okhttp3.RequestBody)> -> _SINK_
+<okhttp3.Request$Builder: okhttp3.Request$Builder put(okhttp3.RequestBody)> -> _SINK_
+<okhttp3.OkHttpClient: okhttp3.Call newCall(okhttp3.Request)> -> _SINK_
+<com.squareup.okhttp.Request$Builder: com.squareup.okhttp.Request$Builder url(java.lang.String)> -> _SINK_
+<com.squareup.okhttp.Request$Builder: com.squareup.okhttp.Request$Builder header(java.lang.String,java.lang.String)> -> _SINK_
+<com.squareup.okhttp.Request$Builder: com.squareup.okhttp.Request$Builder addHeader(java.lang.String,java.lang.String)> -> _SINK_
+<com.squareup.okhttp.Request$Builder: com.squareup.okhttp.Request$Builder post(com.squareup.okhttp.RequestBody)> -> _SINK_
+<com.squareup.okhttp.OkHttpClient: com.squareup.okhttp.Call newCall(com.squareup.okhttp.Request)> -> _SINK_
+<com.android.volley.RequestQueue: com.android.volley.Request add(com.android.volley.Request)> -> _SINK_
+<android.webkit.WebView: void loadUrl(java.lang.String)> -> _SINK_
+<android.webkit.WebView: void loadUrl(java.lang.String,java.util.Map)> -> _SINK_
+<android.webkit.WebView: void postUrl(java.lang.String,byte[])> -> _SINK_
+
+% ---------------------------------------------------------------------
+% Logs
+% ---------------------------------------------------------------------
+<android.util.Log: int d(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int d(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int e(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int e(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int i(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int i(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int v(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int v(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int w(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int w(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+<android.util.Log: int wtf(java.lang.String,java.lang.String)> -> _SINK_
+<android.util.Log: int wtf(java.lang.String,java.lang.String,java.lang.Throwable)> -> _SINK_
+
+% ---------------------------------------------------------------------
+% SMS / inter-app output
+% ---------------------------------------------------------------------
+<android.telephony.SmsManager: void sendTextMessage(java.lang.String,java.lang.String,java.lang.String,android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_
+<android.telephony.SmsManager: void sendDataMessage(java.lang.String,java.lang.String,short,byte[],android.app.PendingIntent,android.app.PendingIntent)> android.permission.SEND_SMS -> _SINK_
+<android.telephony.SmsManager: void sendMultipartTextMessage(java.lang.String,java.lang.String,java.util.ArrayList,java.util.ArrayList,java.util.ArrayList)> android.permission.SEND_SMS -> _SINK_
+<android.content.Context: void sendBroadcast(android.content.Intent)> -> _SINK_
+<android.content.Context: void sendBroadcast(android.content.Intent,java.lang.String)> -> _SINK_
+<android.app.Activity: void setResult(int,android.content.Intent)> -> _SINK_
+
+% ---------------------------------------------------------------------
+% Local storage sinks: keep these only if you want to detect local collection.
+% They are cheaper than full file/database coverage but can still add paths.
+% ---------------------------------------------------------------------
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putString(java.lang.String,java.lang.String)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putStringSet(java.lang.String,java.util.Set)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putInt(java.lang.String,int)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putLong(java.lang.String,long)> -> _SINK_
+<android.content.SharedPreferences$Editor: android.content.SharedPreferences$Editor putBoolean(java.lang.String,boolean)> -> _SINK_
+<android.content.Context: java.io.FileOutputStream openFileOutput(java.lang.String,int)> -> _SINK_
+<java.io.FileOutputStream: void write(byte[])> -> _SINK_
+<java.io.FileOutputStream: void write(byte[],int,int)> -> _SINK_
+<java.io.Writer: void write(java.lang.String)> -> _SINK_
+<java.io.BufferedWriter: void write(java.lang.String)> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: long insert(java.lang.String,java.lang.String,android.content.ContentValues)> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: int update(java.lang.String,android.content.ContentValues,java.lang.String,java.lang.String[])> -> _SINK_
+<android.database.sqlite.SQLiteDatabase: void execSQL(java.lang.String)> -> _SINK_

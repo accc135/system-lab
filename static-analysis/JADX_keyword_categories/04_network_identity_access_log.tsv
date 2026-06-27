@@ -1,0 +1,34 @@
+confidence	kind	pattern	note
+H	native_api	InetAddress.getHostAddress	IP address
+H	native_api	Inet4Address.getHostAddress	IPv4 address
+H	native_api	Inet6Address.getHostAddress	IPv6 address
+H	native_api	NetworkInterface.getNetworkInterfaces	Network interfaces
+H	native_api	NetworkInterface.getInetAddresses	Interface IP addresses
+H	native_api	NetworkInterface.getHardwareAddress	Network hardware/MAC address
+H	native_api	CookieManager.getCookie	Web cookie
+H	native_api	CookieManager.setCookie	Web cookie write
+H	native_api	WebSettings.getUserAgentString	Browser/user-agent identifier
+H	native_api	WebView.getSettings	WebView settings, often used before user-agent access
+H	native_api	ConnectivityManager.getActiveNetworkInfo	Network state
+H	native_api	ConnectivityManager.getAllNetworkInfo	All network states
+H	native_api	ConnectivityManager.getNetworkCapabilities	Network capabilities
+H	native_api	ConnectivityManager.getLinkProperties	Network link properties
+H	native_api	WifiInfo.getSSID	Wi-Fi SSID
+H	native_api	WifiInfo.getBSSID	Wi-Fi BSSID
+H	native_api	WifiInfo.getIpAddress	Wi-Fi IP address
+H	native_api	WifiInfo.getMacAddress	Wi-Fi MAC address
+H	native_api	WifiManager.getConnectionInfo	Current Wi-Fi connection info
+H	native_api	WifiManager.getScanResults	Nearby Wi-Fi scan results
+H	native_api	TelephonyManager.getNetworkOperator	Carrier/network operator
+H	native_api	TelephonyManager.getNetworkOperatorName	Carrier/network operator name
+M	native_api	AdvertisingIdClient.getAdvertisingIdInfo	Advertising identifier
+M	business_keyword	ipAddress	IP field
+M	business_keyword	cookie	Cookie field
+M	business_keyword	userAgent	User-Agent field
+M	business_keyword	accessLog	Access log field
+M	business_keyword	visitTime	Visit time field
+M	business_keyword	pageUrl	Visited page URL
+M	business_keyword	networkType	Network type field
+L	chinese_keyword	访问日志	Access log keyword
+L	chinese_keyword	运营商	Carrier keyword
+L	chinese_keyword	访问页面	Visited page keyword

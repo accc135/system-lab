@@ -1,0 +1,24 @@
+confidence	kind	pattern	note
+H	native_api	BiometricPrompt	Android biometric authentication
+H	native_api	BiometricPrompt.authenticate	Biometric authentication call
+H	native_api	FingerprintManager	Legacy fingerprint API
+H	native_api	FingerprintManager.authenticate	Legacy fingerprint authentication call
+H	native_api	FaceDetector	Android face detector
+H	native_api	CameraManager.openCamera	Face capture clue
+H	native_api	Camera.open	Face capture clue
+H	native_api	AudioRecord.read	Voiceprint capture clue
+M	permission	USE_BIOMETRIC	Biometric permission
+M	permission	USE_FINGERPRINT	Fingerprint permission
+M	sdk_api	Megvii	Face++/Megvii face SDK clue
+M	sdk_api	FaceID	Face recognition SDK clue
+M	sdk_api	liveness	Liveness detection keyword
+M	business_keyword	faceToken	Face token field
+M	business_keyword	faceFeature	Face feature field
+M	business_keyword	fingerprint	Fingerprint field
+M	business_keyword	voiceprint	Voiceprint field
+M	business_keyword	iris	Iris field
+M	business_keyword	biometric	Biometric field
+L	chinese_keyword	人脸识别	Face recognition keyword
+L	chinese_keyword	活体检测	Liveness keyword
+L	chinese_keyword	指纹	Fingerprint keyword
+L	chinese_keyword	声纹	Voiceprint keyword

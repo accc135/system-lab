@@ -1,0 +1,51 @@
+confidence	kind	pattern	note
+H	native_api	LocationManager.getLastKnownLocation	Last known location
+H	native_api	LocationManager.requestLocationUpdates	Continuous location
+H	native_api	LocationManager.requestSingleUpdate	Single location update
+H	native_api	LocationManager.getProviders	Available location providers
+H	native_api	LocationManager.getAllProviders	All location providers
+H	native_api	Location.getLatitude	Latitude
+H	native_api	Location.getLongitude	Longitude
+H	native_api	Location.getAltitude	Altitude
+H	native_api	Location.getAccuracy	Location accuracy
+H	native_api	Location.getProvider	Location provider
+H	native_api	Location.getBearing	Movement bearing
+H	native_api	Location.getSpeed	Movement speed
+H	native_api	Location.getTime	Location timestamp
+H	native_api	FusedLocationProviderClient	Google fused location
+H	native_api	getLastLocation	Google fused last location
+H	native_api	getCurrentLocation	Google fused current location
+H	native_api	requestLocationUpdates	Google fused repeated location
+H	native_api	TelephonyManager.getCellLocation	Cell location
+H	native_api	TelephonyManager.getAllCellInfo	Cell tower info
+H	native_api	GsmCellLocation.getCid	GSM cell ID
+H	native_api	GsmCellLocation.getLac	GSM location area code
+H	native_api	CdmaCellLocation.getBaseStationId	CDMA base station ID
+H	native_api	CdmaCellLocation.getBaseStationLatitude	CDMA base station latitude
+H	native_api	CdmaCellLocation.getBaseStationLongitude	CDMA base station longitude
+H	native_api	WifiManager.getScanResults	Wi-Fi positioning clue
+H	native_api	WifiInfo.getSSID	Wi-Fi positioning SSID
+H	native_api	WifiInfo.getBSSID	Wi-Fi positioning BSSID
+M	sdk_api	AMapLocation	Amap location SDK
+M	sdk_api	AMapLocationClient	Amap location SDK
+M	sdk_api	AMapLocation.getLatitude	Amap latitude
+M	sdk_api	AMapLocation.getLongitude	Amap longitude
+M	sdk_api	AMapLocation.getAddress	Amap address
+M	sdk_api	AMapLocation.getCity	Amap city
+M	sdk_api	BDLocation	Baidu location SDK
+M	sdk_api	BDLocation.getLatitude	Baidu latitude
+M	sdk_api	BDLocation.getLongitude	Baidu longitude
+M	sdk_api	BDLocation.getAddrStr	Baidu address
+M	sdk_api	BDLocation.getCity	Baidu city
+M	sdk_api	LocationClient	Baidu location SDK
+M	sdk_api	TencentLocation	Tencent location SDK
+M	permission	ACCESS_FINE_LOCATION	Precise location permission
+M	permission	ACCESS_COARSE_LOCATION	Coarse location permission
+M	business_keyword	latitude	Latitude field
+M	business_keyword	longitude	Longitude field
+M	business_keyword	location	Location field
+M	business_keyword	city	City field
+M	business_keyword	address	Address field
+L	chinese_keyword	当前位置	Current location keyword
+L	chinese_keyword	精准定位	Precise location keyword
+L	chinese_keyword	所在城市	City keyword

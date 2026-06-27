@@ -1,0 +1,39 @@
+confidence	kind	pattern	note
+H	native_api	PackageManager.getInstalledPackages	Installed packages behavior clue
+H	native_api	PackageManager.getInstalledApplications	Installed apps behavior clue
+H	native_api	DownloadManager	Download records clue
+M	business_keyword	browse	Browse record
+M	business_keyword	browseHistory	Browse history
+M	business_keyword	search	Search record
+M	business_keyword	searchHistory	Search history
+M	business_keyword	searchKeyword	Search keyword
+M	business_keyword	click	Click record
+M	business_keyword	clickRecord	Click record
+M	business_keyword	readHistory	Reading history
+M	business_keyword	watchHistory	Watching history
+M	business_keyword	playHistory	Playback history
+M	business_keyword	downloadHistory	Download history
+M	business_keyword	favorite	Favorite/collection
+M	business_keyword	collect	Collection behavior
+M	business_keyword	like	Like behavior
+M	business_keyword	likeRecord	Like record
+M	business_keyword	comment	Comment behavior
+M	business_keyword	commentRecord	Comment record
+M	business_keyword	share	Share behavior
+M	business_keyword	shareRecord	Share record
+M	business_keyword	duration	Use duration/stay time
+M	business_keyword	usageDuration	Usage duration
+M	business_keyword	stayTime	Page stay time
+M	business_keyword	pageStayTime	Page stay time
+M	business_keyword	preference	Preference field
+M	business_keyword	contentPreference	Content preference
+M	business_keyword	shoppingPreference	Shopping preference
+M	business_keyword	adPreference	Advertising preference
+M	business_keyword	recommendPreference	Recommendation preference
+M	business_keyword	interest	Interest field
+M	business_keyword	interestTag	Interest tag
+M	business_keyword	favoriteTag	Favorite/interested tag
+L	chinese_keyword	浏览记录	Browse history keyword
+L	chinese_keyword	搜索记录	Search history keyword
+L	chinese_keyword	兴趣偏好	Interest preference keyword
+L	chinese_keyword	使用时长	Use duration keyword

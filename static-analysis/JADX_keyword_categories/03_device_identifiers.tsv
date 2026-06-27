@@ -1,0 +1,60 @@
+confidence	kind	pattern	note
+H	native_api	TelephonyManager.getDeviceId	IMEI/MEID legacy device ID
+H	native_api	TelephonyManager.getImei	IMEI
+H	native_api	TelephonyManager.getMeid	MEID
+H	native_api	TelephonyManager.getSubscriberId	IMSI
+H	native_api	TelephonyManager.getSimSerialNumber	SIM serial
+H	native_api	Settings.Secure.ANDROID_ID	Android ID constant
+H	native_api	Settings.Secure.getString	Android ID/settings lookup
+H	native_api	Build.SERIAL	Device serial
+H	native_api	Build.getSerial	Device serial
+H	native_api	Build.MODEL	Device model
+H	native_api	Build.MANUFACTURER	Device manufacturer
+H	native_api	Build.BRAND	Device brand
+H	native_api	Build.DEVICE	Device codename
+H	native_api	Build.PRODUCT	Device product name
+H	native_api	Build.HARDWARE	Device hardware name
+H	native_api	Build.BOARD	Device board name
+H	native_api	Build.FINGERPRINT	Build fingerprint
+H	native_api	Build.DISPLAY	Build display ID
+H	native_api	Build.ID	Build ID
+H	native_api	Build.HOST	Build host
+H	native_api	Build.BOOTLOADER	Bootloader version
+H	native_api	Build.getRadioVersion	Radio/baseband version
+H	native_api	Build.VERSION.RELEASE	OS version
+H	native_api	Build.VERSION.SDK_INT	Android SDK version
+H	native_api	Build.VERSION.INCREMENTAL	Incremental build version
+H	native_api	AdvertisingIdClient.getAdvertisingIdInfo	Google advertising ID
+H	native_api	WifiManager.getConnectionInfo	Current Wi-Fi connection info
+H	native_api	WifiManager.getScanResults	Nearby Wi-Fi scan results
+H	native_api	WifiInfo.getMacAddress	Wi-Fi MAC address
+H	native_api	WifiInfo.getSSID	Wi-Fi SSID
+H	native_api	WifiInfo.getBSSID	Wi-Fi BSSID
+H	native_api	WifiInfo.getIpAddress	Wi-Fi IP address
+H	native_api	BluetoothAdapter.getAddress	Bluetooth adapter MAC address
+H	native_api	BluetoothAdapter.getName	Bluetooth adapter name
+H	native_api	BluetoothDevice.getAddress	Bluetooth device MAC address
+H	native_api	BluetoothDevice.getName	Bluetooth device name
+H	native_api	TelephonyManager.getNetworkOperator	Network operator
+H	native_api	TelephonyManager.getNetworkOperatorName	Network operator name
+H	native_api	TelephonyManager.getSimOperator	SIM operator
+H	native_api	TelephonyManager.getSimOperatorName	SIM operator name
+H	native_api	TelephonyManager.getNetworkCountryIso	Network country ISO
+H	native_api	TelephonyManager.getSimCountryIso	SIM country ISO
+M	sdk_api	OAID	OAID keyword
+M	sdk_api	MSA OAID	Mobile Security Alliance OAID
+M	business_keyword	deviceId	Device ID field
+M	business_keyword	imei	IMEI field
+M	business_keyword	imsi	IMSI field
+M	business_keyword	androidId	Android ID field
+M	business_keyword	oaid	OAID field
+M	business_keyword	macAddress	MAC address field
+M	business_keyword	serialNumber	Device serial number field
+M	business_keyword	deviceModel	Device model field
+M	business_keyword	deviceName	Device name field
+M	business_keyword	osVersion	OS version field
+M	business_keyword	appVersion	App version field
+M	business_keyword	simSerial	SIM serial field
+L	business_keyword	fingerprint	Device fingerprint field
+L	chinese_keyword	设备标识	Device identifier keyword
+L	chinese_keyword	设备指纹	Device fingerprint keyword
