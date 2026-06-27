@@ -1,0 +1,8 @@
+openai
+frida
+frida-tools
+mitmproxy
+sentence-transformers
+scikit-learn
+numpy
+jieba
